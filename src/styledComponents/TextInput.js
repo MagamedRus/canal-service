@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { blueWater } from "../constants/styles/colors";
 
-const TextInput = styled.input.attrs({
+const TextInput = styled.input.attrs((props) => ({
   type: "text",
-})`
+  ...props,
+}))`
   height: 37px;
   width: 285px;
   background-color: #d9d9d9;
