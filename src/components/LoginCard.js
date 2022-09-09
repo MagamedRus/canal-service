@@ -4,11 +4,14 @@ import { blueWater } from "../constants/styles/colors";
 import CreamButton from "../styledComponents/CreamButton";
 import TextInputWithTitle from "./TextInputWithTitle";
 
-const LoginCard = () => {
+const LoginCard = ({ submit }) => {
   const [login, setLogin] = useState(null);
   const [password, setPassword] = useState(null);
 
-  const sumbit = () => {};
+  const onSubmit = () => {
+    const authData = { login, password };
+    submit(authData);
+  };
 
   return (
     <Сontainer>
@@ -16,10 +19,10 @@ const LoginCard = () => {
       <TextInputWithTitle title={"login"} onChangeInput={setLogin} />
       <TextInputWithTitle
         title={"password"}
-        onChangeInput={setLogin}
+        onChangeInput={setPassword}
         type={"password"}
       />
-      <CreamButton onClick={sumbit}>Submit</CreamButton>
+      <CreamButton onClick={onSubmit}>Submit</CreamButton>
     </Сontainer>
   );
 };
