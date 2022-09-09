@@ -1,12 +1,17 @@
 import React from "react";
-import Header from "../components/Header";
+import styled from "styled-components";
+import { mainBackground } from "../constants/styles/colors";
 
-function PublishesPage(props) {
+function PublishesPage() {
   return (
-    <div>
-      <Header isExitBtn={true} username={'asdasd'} />
-    </div>
+    <Container>
+    </Container>
   );
 }
 
 export default PublishesPage;
+
+
+const Container = styled.div`
+  background-color: ${mainBackground}
+` 
