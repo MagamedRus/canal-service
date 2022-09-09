@@ -24,12 +24,12 @@ const HeaderContainer = styled.div`
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  /* position: absolute; */
+  position: absolute;
   background: ${cream};
   height: 118px;
   width: 100%;
-  /* left: 0px;
-  top: 0px; */
+  left: 0px;
+  top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @media ${deviceSizes.desktop} {
