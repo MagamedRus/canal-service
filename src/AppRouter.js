@@ -1,16 +1,18 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import { basePath, authPath } from "./constants/routePath";
 import AuthPage from "./pages/AuthPage";
 import PublishesPage from "./pages/PublishesPage";
 
 const AppRouter = () => (
-  <HashRouter>
+  <BrowserRouter>
+    <Header />
     <Routes>
       <Route path={authPath} element={<AuthPage />} />
       <Route path={basePath} element={<PublishesPage />} />
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default AppRouter;
