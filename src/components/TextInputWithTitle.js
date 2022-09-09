@@ -18,7 +18,7 @@ export default TextInputWithTitle;
 
 const Container = styled.div`
   display: flex;
-  margin: 0 21px 25px 20px;
+  margin-bottom: 25px;
   width: 440px;
   height: 45px;
   align-items: center;
