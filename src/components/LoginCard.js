@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { blueWater } from "../constants/styles/colors";
 import CreamButton from "../styledComponents/CreamButton";
+import ErrorIndificator from "./ErrorIndificator";
 import TextInputWithTitle from "./TextInputWithTitle";
 
 const LoginCard = ({ submit }) => {
   const [login, setLogin] = useState(null);
   const [password, setPassword] = useState(null);
+  const [isError, setIsError] = useState(false);
 
   const onSubmit = () => {
     const authData = { login, password };
@@ -22,6 +24,7 @@ const LoginCard = ({ submit }) => {
         onChangeInput={setPassword}
         type={"password"}
       />
+      <ErrorIndificator isShow={isError} styles={erorLoginIndicatorStyles} />
       <CreamButton onClick={onSubmit}>Submit</CreamButton>
     </Сontainer>
   );
@@ -54,4 +57,8 @@ const BlueWaterHeader = styled.h1`
   font-size: 24px;
   line-height: 29px;
   color: ${blueWater};
+`;
+
+const erorLoginIndicatorStyles = css`
+  margin-top: 232px;
 `;
