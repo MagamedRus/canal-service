@@ -5,27 +5,16 @@ import BoldText from "../styledComponents/BoldText";
 
 const PublishCard = ({ publishData }) => (
   <Container>
-    {/* Looks not good, but grid even worse */}
     <TopContent>
-      <SquareImage
-        src="https://via.placeholder.com/150/810b14"
-        alt="Post image"
-      />
+      <SquareImage src={publishData.img} alt="Post image" />
       <RightTopContent>
-        <BoldText>Author: Leannne Grahama</BoldText>
-        <BoldText>Company: Leannne Grahama</BoldText>
+        <BoldText>Author: {publishData.author}</BoldText>
+        <BoldText>Company: {publishData.company}</BoldText>
       </RightTopContent>
     </TopContent>
     <BottomContent>
-      <BoldText>
-        Title:sunt aut facere repellat provident occaecati excepturi optio
-        reprehenderit
-      </BoldText>
-      <BoldText>
-        quia et suscipit\nsuscipit recusandae consequuntur expedita et
-        cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem
-        sunt rem eveniet architecto
-      </BoldText>
+      <BoldText>Title: {publishData.title}</BoldText>
+      <BoldText>{publishData.body}</BoldText>
     </BottomContent>
   </Container>
 );
