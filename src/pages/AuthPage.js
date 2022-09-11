@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import LoginCard from "../components/LoginCard";
 import { basePath } from "../constants/routePath";
+import { deviceSizes } from "../constants/styles/sizes";
 import { authUser } from "../controllers/user";
 import { setAuth } from "../store/action-creators/auth";
 
@@ -38,4 +39,10 @@ const Container = styled.div`
   justify-content: center;
   flex: 1;
   height: 100%;
+
+  @media ${deviceSizes.tabletS} {
+    padding-top: 132px;
+    align-items: unset;
+    height: unset;
+  }
 `;

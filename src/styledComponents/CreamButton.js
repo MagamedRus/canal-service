@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { cream } from "../constants/styles/colors";
+import { deviceSizes } from "../constants/styles/sizes";
 
 const CreamButton = styled.button`
   width: 213px;
@@ -7,8 +8,9 @@ const CreamButton = styled.button`
   background: ${cream};
   border-radius: 10px;
   border: 0;
+  padding: 0;
   outline: none;
-  margin: 0 auto 22px auto;
+  margin: 25px auto 22px auto;
   /** Text styles*/
   font-family: "Inter";
   font-style: normal;
@@ -16,6 +18,10 @@ const CreamButton = styled.button`
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  
+  @media ${deviceSizes.tabletS} {
+    margin-top: 23px;
+  }
 `;
 
 export default CreamButton;

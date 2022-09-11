@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { blueWater } from "../constants/styles/colors";
+import { deviceSizes } from "../constants/styles/sizes";
 import CreamButton from "../styledComponents/CreamButton";
 import ErrorIndificator from "./ErrorIndificator";
 import TextInputWithTitle from "./TextInputWithTitle";
@@ -41,6 +42,11 @@ const Сontainer = styled.div`
   background-color: white;
   border: 5px solid ${blueWater};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media ${deviceSizes.tabletS} {
+    width: 280px;
+    height: 313px;
+  }
 `;
 
 const BlueWaterHeader = styled.h1`
@@ -56,8 +62,17 @@ const BlueWaterHeader = styled.h1`
   font-size: 24px;
   line-height: 29px;
   color: ${blueWater};
+
+  @media ${deviceSizes.tabletS} {
+    width: 212px;
+    height: 45px;
+    margin: 3px 0 0 0;
+  }
 `;
 
 const erorLoginIndicatorStyles = css`
   margin-top: 232px;
+  @media ${deviceSizes.tabletS} {
+    margin-top: 230px;
+  }
 `;

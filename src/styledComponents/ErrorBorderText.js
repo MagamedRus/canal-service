@@ -14,7 +14,7 @@ const ErrorBorderText = styled.p`
   height: 14px;
   width: 14px;
   padding: 2px;
-  margin: 0 10px;
+  margin: 0 10px 0 0;
 `;
 
 export default ErrorBorderText;

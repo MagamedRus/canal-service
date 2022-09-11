@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { blueWater } from "../constants/styles/colors";
+import { deviceSizes } from "../constants/styles/sizes";
 
 const TextInput = styled.input.attrs((props) => ({
   type: "text",
@@ -17,6 +18,15 @@ const TextInput = styled.input.attrs((props) => ({
   font-size: 16px;
   line-height: 19px;
   outline: none;
+
+  /* На макете инпут у пароля был меньшей высоты,
+    думаю это ошибка, по этому не стал ничего менять
+    P.S. Обычно я не пишу комментарии на русском)  */
+  @media ${deviceSizes.tabletS} {
+    width: 194px;
+    font-size: 14px;
+    height: 31px;
+  }
 `;
 
 export default TextInput;

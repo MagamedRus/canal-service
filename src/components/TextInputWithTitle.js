@@ -18,13 +18,21 @@ export default TextInputWithTitle;
 
 const Container = styled.div`
   display: flex;
-  margin-bottom: 25px;
   width: 440px;
   height: 45px;
   align-items: center;
   justify-content: space-between;
 
-  @media ${deviceSizes.mobileL} {
+  :nth-of-type(1) {
+    margin-bottom: 25px;
+    @media ${deviceSizes.tabletS} {
+      margin-bottom: 13px;
+    }
+  }
+
+  @media ${deviceSizes.tabletS} {
+    height: 91px;
+    width: 212px;
     flex-direction: column;
     align-items: start;
   }
