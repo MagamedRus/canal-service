@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import LoginCard from "../components/LoginCard";
 import { basePath } from "../constants/routePath";
-import { AuthActions } from "../constants/store/actionTypes";
 import { authUser } from "../controllers/user";
+import { setAuth } from "../store/action-creators/auth";
 
 function AuthPage() {
   const [isError, setIsError] = useState(false);
@@ -18,7 +18,7 @@ function AuthPage() {
       setIsError(true);
     } else {
       const userData = reqAuthData.userData;
-      dispatch({ type: AuthActions.SET_AUTH_DATA, payload: userData });
+      dispatch(setAuth(userData));
       navigate(basePath);
     }
   };
