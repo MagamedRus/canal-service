@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ExitButton from "../styledComponents/ExitButton";
 import Username from "../styledComponents/Username";
 import { resetAuth } from "../store/action-creators/auth";
+import { deviceSizes } from "../constants/styles/sizes";
 
 const UsernameWithExit = ({ username }) => {
   const navigate = useNavigate();
@@ -31,5 +32,11 @@ const Container = styled.div`
   align-items: center;
   width: max-width;
   height: 56px;
-  margin-right: 34px;
+  margin-right: 35px;
+  @media ${deviceSizes.tablet} {
+    margin-right: 35px;
+  }
+  @media ${deviceSizes.mobileL} {
+    margin-right: 15px;
+  }
 `;

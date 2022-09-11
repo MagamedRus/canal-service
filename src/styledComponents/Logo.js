@@ -9,9 +9,13 @@ const Logo = styled.div`
   background-image: url(${titledLogo});
   background-repeat: no-repeat;
   margin-left: 41px;
-
+  @media ${deviceSizes.tablet} {
+    margin-left: 37px;
+  }
   @media ${deviceSizes.mobileL} {
     background-image: url(${logo});
+    width: 70px;
+    margin-left: 15px;
   }
 `;
 
