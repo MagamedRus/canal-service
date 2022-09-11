@@ -5,7 +5,7 @@ import LowerHeader from "../styledComponents/LowerHeader";
 import TextInput from "../styledComponents/TextInput";
 
 const TextInputWithTitle = ({ title, onChangeInput, ...inputProps }) => {
-  const onInput = (ev) => onChangeInput(ev.value);
+  const onInput = (ev) => onChangeInput(ev.target.value);
   return (
     <Container>
       <LowerHeader>{title}</LowerHeader>
