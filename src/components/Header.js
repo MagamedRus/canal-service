@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "../styledComponents/Logo";
 import styled from "styled-components";
 import { cream } from "../constants/styles/colors";
-import { deviceSizes } from "../constants/styles/sizes";
 import UsernameWithExit from "./UsernnameWithExit";
 import { useSelector } from "react-redux";
 
@@ -30,7 +29,4 @@ const HeaderContainer = styled.div`
   left: 0px;
   top: 0px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  @media ${deviceSizes.desktop} {
-  }
 `;
