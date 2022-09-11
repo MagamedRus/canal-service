@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5c115f21.css",
+    "main.js": "/static/js/main.3ad7c4ce.js",
+    "static/media/Inter-VariableFont.ttf": "/static/media/Inter-VariableFont.aadb65ac45347ff46699.ttf",
+    "static/media/titledLogo.svg": "/static/media/titledLogo.a7b8567175961001dc6010a6b57cf2ae.svg",
+    "static/media/logo.svg": "/static/media/logo.24664b6fcc53325ca9e5b307a4a2dc60.svg",
+    "static/media/exitBtn.svg": "/static/media/exitBtn.1c730a9fe23aed92a4b8dce90c18b811.svg",
+    "index.html": "/index.html",
+    "main.5c115f21.css.map": "/static/css/main.5c115f21.css.map",
+    "main.3ad7c4ce.js.map": "/static/js/main.3ad7c4ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c115f21.css",
+    "static/js/main.3ad7c4ce.js"
+  ]
+}
