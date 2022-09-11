@@ -1,5 +1,23 @@
 export const initialAuthState = {
-  login: null,
+  id: null,
   name: null,
-  userId: null
-} 
+  username: null,
+  email: null,
+  address: {
+    street: null,
+    suite: null,
+    city: null,
+    zipcode: null,
+    geo: {
+      lat: null,
+      lng: null,
+    },
+  },
+  phone: null,
+  website: null,
+  company: {
+    name: null,
+    catchPhrase: null,
+    bs: null,
+  },
+};
