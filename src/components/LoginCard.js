@@ -10,10 +10,7 @@ const LoginCard = ({ submit, isBadAuth }) => {
   const [login, setLogin] = useState(null);
   const [password, setPassword] = useState(null);
 
-  const onSubmit = () => {
-    const authData = { login, password };
-    submit(authData);
-  };
+  const onSubmit = () => submit({ login, password });
 
   return (
     <Сontainer>
