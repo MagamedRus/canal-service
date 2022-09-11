@@ -6,3 +6,9 @@ export const setAuth = (authData) => (dispatch) => {
     payload: authData,
   });
 };
+
+export const resetAuth = () => (dispatch) => {
+  dispatch({
+    type: AuthActions.RESET,
+  });
+};
