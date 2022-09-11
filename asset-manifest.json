@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/canal-service/static/css/main.6a986f96.css",
-    "main.js": "/canal-service/static/js/main.6c8e2db9.js",
+    "main.js": "/canal-service/static/js/main.fd4c336c.js",
     "static/media/Inter-VariableFont.ttf": "/canal-service/static/media/Inter-VariableFont.aadb65ac45347ff46699.ttf",
     "static/media/titledLogo.svg": "/canal-service/static/media/titledLogo.a7b8567175961001dc6010a6b57cf2ae.svg",
     "static/media/logo.svg": "/canal-service/static/media/logo.24664b6fcc53325ca9e5b307a4a2dc60.svg",
     "static/media/exitBtn.svg": "/canal-service/static/media/exitBtn.1c730a9fe23aed92a4b8dce90c18b811.svg",
     "index.html": "/canal-service/index.html",
     "main.6a986f96.css.map": "/canal-service/static/css/main.6a986f96.css.map",
-    "main.6c8e2db9.js.map": "/canal-service/static/js/main.6c8e2db9.js.map"
+    "main.fd4c336c.js.map": "/canal-service/static/js/main.fd4c336c.js.map"
   },
   "entrypoints": [
     "static/css/main.6a986f96.css",
-    "static/js/main.6c8e2db9.js"
+    "static/js/main.fd4c336c.js"
   ]
 }
