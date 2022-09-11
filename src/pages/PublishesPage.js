@@ -4,6 +4,7 @@ import styled from "styled-components";
 import PublishCard from "../components/PublishCard";
 import { deviceSizes, onlyDeviceSizes } from "../constants/styles/sizes";
 import { getPosts } from "../controllers/post";
+import withAuth from "../hoc/withAuth";
 
 function PublishesPage() {
   const [posts, setPosts] = useState([]);
@@ -27,7 +28,7 @@ function PublishesPage() {
   );
 }
 
-export default PublishesPage;
+export default withAuth(PublishesPage);
 
 const Container = styled.div`
   display: flex;
